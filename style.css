@@ -1,20 +1,23 @@
-body{
+body {
     font-family: "Montserrat", sans-serif;
     margin: 0;
     overflow-x: hidden;
 }
-.sonybar{
+
+.sonybar {
     height: 2.25rem;
     background-color: black;
     text-align: end;
     padding: 0 0.5rem;
 }
-.sonybar img{
+
+.sonybar img {
     width: 5rem;
     height: 100%;
     object-fit: contain;
 }
-.header{
+
+.header {
     position: sticky;
     top: 0;
     padding: 0 1rem;
@@ -23,7 +26,8 @@ body{
     background-color: white;
     z-index: 2;
 }
-.nav-items{
+
+.nav-items {
     min-width: 0px;
     max-width: 100%;
     height: 100%;
@@ -32,61 +36,68 @@ body{
     gap: 0.5rem;
 
 }
-.nav-items a{
-    font-size: clamp(0.5rem,0.75rem,0.85rem);
-    font-weight:700;
+
+.nav-items a {
+    font-size: clamp(0.5rem, 0.75rem, 0.85rem);
+    font-weight: 700;
     text-decoration: none;
     color: black;
 }
-.nav-items a:hover{
-    color: #0070cc;;
+
+.nav-items a:hover {
+    color: #0070cc;
+    ;
 }
-.logo{
+
+.logo {
     text-align: center;
     width: 50px;
     height: 50px;
 }
-.arrow{
+
+.arrow {
     font-size: 0.5rem;
     opacity: 0.8;
 }
-.logo img{
+
+.logo img {
     width: 40px;
     object-fit: cover;
 }
-.spacer{
+
+.spacer {
     flex: 1;
 }
-.badge-btn{
+
+.badge-btn {
     background-color: #0070cc;
     border: none;
     border-radius: 2rem;
-    padding :0.1rem 0.75rem;
+    padding: 0.1rem 0.75rem;
     font-weight: 550;
     font-size: 1.15rem;
     color: white;
-    
+
     margin: 0 0.5rem;
 }
 
-.hero{
+.hero {
     min-height: calc(100vh - 100px);
     background-image:
-        linear-gradient(
-            to right,
-            rgba(0,0,0,0.85) 0%,
-            rgba(0,0,0,0.6) 15%,
-            rgba(0,0,0,0.2) 60%,
-            rgba(0,0,0,0) 100%
-        ),
+        linear-gradient(to right,
+            rgba(0, 0, 0, 0.85) 0%,
+            rgba(0, 0, 0, 0.6) 15%,
+            rgba(0, 0, 0, 0.2) 60%,
+            rgba(0, 0, 0, 0) 100%),
         url("Saros-Wallpaper-1.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
 }
-.hero-inner{
-    padding-left: clamp(2rem,5vw,6rem);
+
+.hero-inner {
+    padding-left: clamp(2rem, 5vw, 6rem);
 
     display: flex;
     flex-direction: column;
@@ -97,7 +108,7 @@ body{
     max-width: 520px;
 }
 
-.hero-inner img{
+.hero-inner img {
     width: 350px;
     object-fit: cover;
     object-position: center;
@@ -108,7 +119,7 @@ body{
     z-index: 1;
 }
 
-.btn{
+.btn {
     cursor: pointer;
     border: none;
     background-color: orangered;
@@ -120,13 +131,15 @@ body{
     padding: 0.5rem 0.65rem;
     /* margin: 0 0.5rem; */
 }
-.btn-bg{
+
+.btn-bg {
     display: inline-block;
     padding: 0.1rem;
     border-radius: 2rem;
     border: 2px solid;
     border-color: rgba(255, 255, 255, 0);
 }
+
 .btn-bg:hover {
     border-color: orangered;
 }
@@ -140,12 +153,12 @@ body{
     overflow-x: auto;
     scrollbar-width: none;
     scroll-snap-type: x mandatory;
-    padding: 2rem 1.5rem;  
+    padding: 2rem 1.5rem;
     justify-content: flex-start;
     scroll-behavior: smooth;
 }
 
-.card-bg{
+.card-bg {
     opacity: 0.75;
     scroll-snap-align: end;
     display: flex;
@@ -155,11 +168,12 @@ body{
 
     border: 2px solid #ffffff00;
     border-radius: 1rem;
-    width: clamp(210px,20vw,230px);
+    width: clamp(210px, 20vw, 230px);
     flex: 0 0 auto;
     transition: transform 0.2s ease 0s;
 }
-.card-bg:hover{
+
+.card-bg:hover {
     cursor: pointer;
     opacity: 1;
     border-color: #0070cc;
@@ -167,20 +181,20 @@ body{
     box-shadow: 0 10px 5px #77777788;
 }
 
-.card-bg img{
+.card-bg img {
     border-radius: 1rem;
     width: 100%;
     object-fit: cover;
 }
 
-.ps5{
+.ps5 {
     /* display: flex;
     flex-direction: column;
     height: 100vh; */
     /* background-color: #0070cc; */
 }
 
-.container-grid{
+.container-grid {
     padding: 0 5rem;
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -189,43 +203,47 @@ body{
     align-content: center;
 }
 
-.details{
+.details {
     display: flex;
     flex-direction: column;
     justify-content: center;
     /* grid-column: 1/2; */
 }
+
 /* .details-img{
     grid-column: 2/3;
 } */
-.details-img img{
+.details-img img {
     width: 100%;
     aspect-ratio: 16/9;
     object-fit: cover;
 }
 
-.details h2{
-  font-size: 2.5rem; 
-  font-weight: 400;
+.details h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
 }
-.btn-blue{
+
+.btn-blue {
     background-color: #0070cc;
 }
-.btn-blue-border:hover{
+
+.btn-blue-border:hover {
     border-color: #0070cc;
 }
-.details h3{
+
+.details h3 {
     font-weight: 400;
     color: #0070cc;
     margin-bottom: 0rem;
 }
 
-.ps5-details{
+.ps5-details {
     /* height: clamp(200px,50vh,300px);
     background-color: #0070cc; */
 }
 
-.container-ps5-items{
+.container-ps5-items {
     /* height: 100%; */
     padding: 2rem;
     background-color: #ffffff;
@@ -237,40 +255,43 @@ body{
     scrollbar-width: none;
 }
 
-.img-shadow{
+.img-shadow {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.104);
 }
-.pad{
+
+.pad {
     padding: 0.2rem;
 }
-.ps5-item h5{
+
+.ps5-item h5 {
     margin: 0.25rem 0;
     height: 2rem;
     text-align: center;
 }
 
-.ps-game-collection{
+.ps-game-collection {
     position: relative;
     padding: 2rem 0;
     background-color: #121314;
     color: white;
     text-align: center;
     min-height: 100vh;
-    
+
 }
 
-.ps-game-collection h3{
+.ps-game-collection h3 {
     font-weight: 400;
     font-size: 2rem;
 }
 
-.double-btn{
-    
+.double-btn {
+
     display: inline-block;
     background-color: #323232;
     border-radius: 2rem;
 }
-.option-btn{
+
+.option-btn {
     cursor: pointer;
     padding: 0.25rem 1rem;
     border-radius: 2rem;
@@ -282,10 +303,12 @@ body{
     line-height: 2rem;
     background-color: transparent;
 }
-.option-btn:hover{
+
+.option-btn:hover {
     color: #0070cc;
 }
-.games-grid{
+
+.games-grid {
     display: grid;
     overflow: hidden;
     grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -294,7 +317,8 @@ body{
     padding: 2rem clamp(1.5rem, 4vw, 5rem);
     /* min-width: 0; */
 }
-.games-card{
+
+.games-card {
     opacity: 0.5;
     width: 100%;
     aspect-ratio: 1 / 1;
@@ -302,24 +326,28 @@ body{
     /* min-width: 0; */
     transition: transform 0.1s ease 0s;
 }
+
 .games-card:hover {
     opacity: 1;
     cursor: pointer;
     transform: scale(1.02);
 }
-.games-card:hover .card-img{
+
+.games-card:hover .card-img {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.926);
 }
-.games-card p{
+
+.games-card p {
     margin-top: 0.5rem;
 }
-.games-card img{
+
+.games-card img {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
     width: 100%;
     border-radius: 0.5rem;
 }
 
-.ps-plus{
+.ps-plus {
     text-align: center;
     min-height: calc(100vh - 64px);
     background-image: url("https://gmedia.playstation.com/is/image/SIEPDC/play-play-play-ps-plus-background-desktop-01-ja-jp-03jul23?$4000px$");
@@ -328,18 +356,19 @@ body{
     padding: 1rem 0;
 }
 
-.ps-plus-img img{
+.ps-plus-img img {
     width: 250px;
     object-fit: cover;
 }
 
-.ps-plus h5{
+.ps-plus h5 {
     font-size: 3rem;
     font-weight: 400;
     /* line-height: 1rem; */
     margin: 1rem 0;
 }
-.ps-plus-cards-container{
+
+.ps-plus-cards-container {
     display: flex;
     gap: 2rem;
     overflow-x: scroll;
@@ -348,20 +377,21 @@ body{
     scroll-behavior: smooth;
 }
 
-.ps-plus-card{
+.ps-plus-card {
     position: relative;
     flex: 0 0 auto;
-    width: clamp(380px,80vw,950px);
+    width: clamp(380px, 80vw, 950px);
     height: 325px;
 }
-.plus-card-img{
+
+.plus-card-img {
     object-fit: cover;
     border-radius: 1rem;
     width: 100%;
     height: 100%;
 }
 
-.ps-plus-card-details{
+.ps-plus-card-details {
     text-align: start;
     color: white;
     padding: 2rem;
@@ -369,69 +399,74 @@ body{
     max-width: 50%;
     bottom: 0;
 }
-.ps-plus-card-details h3{
+
+.ps-plus-card-details h3 {
     font-weight: 300;
     font-size: 1.5rem;
     margin: 1rem 0;
 }
-.ps-plus-card-details p{
+
+.ps-plus-card-details p {
     font-weight: 300;
     font-size: 1rem;
     margin: 1rem 0 0 0;
 }
-.ps-plus-card-details img{
+
+.ps-plus-card-details img {
     width: 50%;
 }
-.box-shadow{
+
+.box-shadow {
     position: absolute;
-    width:100%;
+    width: 100%;
     height: 100%;
     border-radius: 1rem;
-    background: linear-gradient(
-        90deg,
-        rgba(0,0,0,0.85) 0%,
-        rgba(0,0,0,0.65) 45%,
-        rgba(0,0,0,0.35) 65%,
-        rgba(0,0,0,0) 100%
-    );
+    background: linear-gradient(90deg,
+            rgba(0, 0, 0, 0.85) 0%,
+            rgba(0, 0, 0, 0.65) 45%,
+            rgba(0, 0, 0, 0.35) 65%,
+            rgba(0, 0, 0, 0) 100%);
 }
 
 
 @media (min-width:1024px) {
-    .cards-hero{
+    .cards-hero {
         justify-content: center;
     }
 }
 
 @media (max-width:1024px) {
-    .container-grid{
+    .container-grid {
         display: flex;
         flex-direction: column;
         gap: 2rem;
         padding: 0 1rem;
 
     }
-    .details{
+
+    .details {
         text-align: center;
     }
 
-    .games-grid{
-        grid-template-columns: repeat(3,minmax(0,1fr));
+    .games-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
-    .nav-items a{
+
+    .nav-items a {
         display: none;
     }
-    
+
 }
 
-@media (max-width:768px){
-    .hero{
+@media (max-width:768px) {
+    .hero {
         background-image: url("videoframe_8837.png");
         background-position: center;
         background-size: cover;
 
     }
-    .hero-inner{
+
+    .hero-inner {
         box-sizing: border-box;
         max-width: 100%;
         justify-content: flex-end;
@@ -439,25 +474,316 @@ body{
         margin: 0 1rem 0 1rem;
         align-items: center;
     }
-    .hero-text{
+
+    .hero-text {
         text-align: center;
     }
-    
+
 }
 
 .ps-plus-cards-container::-webkit-scrollbar {
-  height: 6px;            
+    height: 6px;
 }
 
 .ps-plus-cards-container::-webkit-scrollbar-track {
-  background: transparent;
+    background: transparent;
 }
 
 .ps-plus-cards-container::-webkit-scrollbar-thumb {
-  background: rgba(0,0,0,0.35);
-  border-radius: 10px;
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
 }
 
+
 .ps-plus-cards-container::-webkit-scrollbar-thumb:hover {
-  background: rgba(0,0,0,0.55);
+    background: rgba(0, 0, 0, 0.55);
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+/* Hidden Utility Class */
+.hidden {
+    display: none !important;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+    padding: 3rem 1rem;
+    text-align: center;
+    background-color: #f7f7f7;
+    color: black;
+}
+
+.newsletter-section h3 {
+    margin: 0 0 1rem 0;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.newsletter-section p {
+    margin-bottom: 2rem;
+    color: #555;
+    font-weight: 500;
+}
+
+#newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#newsletter-email {
+    padding: 0.75rem;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+    box-sizing: border-box;
+}
+
+#newsletter-email:focus {
+    border-color: #0070cc;
+}
+
+#newsletter-error {
+    font-size: 0.9rem;
+    min-height: 1.2em;
+    margin-top: -0.5rem;
+    font-weight: 600;
+}
+
+/* Desktop Nav Links */
+.nav-links {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+@media (max-width: 1024px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Reset .nav-items to be just a flex container for header */
+    .nav-items {
+        /* No fixed position, just standard flex header */
+        position: static;
+        height: 100%;
+        transform: none;
+        background-color: white;
+        width: 100%;
+        padding: 0;
+        box-shadow: none;
+        flex-direction: row;
+        justify-content: space-between;
+        /* Spread items */
+    }
+
+    /* Move the slide-out logic to .nav-links */
+    .nav-links {
+        position: fixed;
+        top: 64px;
+        /* below header */
+        right: 0;
+        height: calc(100vh - 64px);
+        width: 100%;
+        /* Full width or partial? Playstation usually full or side side. User's previous code was 100%. */
+        background-color: white;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2rem;
+
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        z-index: 99;
+        /* Below header z-index */
+        box-sizing: border-box;
+    }
+
+    .nav-links.active {
+        transform: translateX(0);
+    }
+
+    .nav-links a {
+        display: block;
+        font-size: 1.5rem;
+        margin: 1rem 0;
+        width: 100%;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 0.5rem;
+    }
+
+    /* Responsive controls check */
+    .nav-items .logo {
+        display: block;
+        /* Ensure logo is visible */
+    }
+
+    .nav-items .spacer {
+        display: block;
+        /* maintain spacing structure if needed */
+        flex: 1;
+    }
+
+    .spacer {
+        display: block;
+    }
+
+    /* Ensure buttons/icons in header stay visible */
+    .nav-items .badge-btn,
+    .nav-items .fa-magnifying-glass {
+        display: block;
+    }
+}
+
+/* Modal Styles - Light Theme (PlayStation Style) */
+.modal {
+    display: flex;
+    position: fixed;
+    /* Stay in place */
+    z-index: 9999;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Black w/ opacity overlay */
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal-content {
+    background-color: #ffffff;
+    /* White background */
+    color: #000000;
+    /* Black text */
+    margin: auto;
+    padding: 3rem 2rem;
+    border: none;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 1rem;
+    /* Rounded corners like PS cards */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    position: relative;
+    animation: slideDown 0.3s ease-out;
+    text-align: center;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.close-modal {
+    color: #333;
+    position: absolute;
+    right: 1.5rem;
+    top: 1rem;
+    font-size: 2rem;
+    font-weight: 300;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+    color: #0070cc;
+    /* PS Blue on hover */
+    text-decoration: none;
+}
+
+.modal h2 {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    color: #0070cc;
+    /* PS Blue */
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 2rem;
+    /* Pill shape inputs to match buttons */
+    color: #000;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+    background-color: #fff;
+    border-color: #0070cc;
+    outline: none;
+}
+
+.modal .btn-blue {
+    background-color: #0070cc;
+    /* PlayStation Blue */
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    color: white;
+}
+
+.modal .btn-blue:hover {
+    background-color: #005bb5;
+    /* Darker blue */
 }
